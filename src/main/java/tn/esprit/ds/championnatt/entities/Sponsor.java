@@ -2,6 +2,8 @@ package tn.esprit.ds.championnatt.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -19,6 +21,9 @@ public class Sponsor {
     private String pays;
     private Float budgetAnnuel;
     private Boolean bloquerContrat;
+    Boolean archived;
+    LocalDate dateCreation;
+    LocalDate dateDerniereModification;
 
     // ========== ASSOCIATIONS ==========
 

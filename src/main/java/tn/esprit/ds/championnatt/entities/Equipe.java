@@ -19,13 +19,10 @@ public class Equipe {
     private Integer nbPointsTotal;
     private Integer classementGeneral;
 
-    // ========== ASSOCIATIONS ==========
 
-    // OneToMany avec Pilote
     @OneToMany(mappedBy = "equipe", cascade = CascadeType.ALL)
     private List<Pilote> pilotes;
 
-    // ManyToMany avec Sponsor via Contrat
     @OneToMany(mappedBy = "equipe", cascade = CascadeType.ALL)
     private List<Contrat> contrats;
 }

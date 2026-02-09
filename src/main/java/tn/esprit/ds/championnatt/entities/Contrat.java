@@ -18,14 +18,11 @@ public class Contrat {
     private String annee;
     private Boolean archived;
 
-    // ========== ASSOCIATIONS ==========
-
-    // ManyToOne avec Sponsor
     @ManyToOne
     @JoinColumn(name = "sponsor_id")
     private Sponsor sponsor;
 
-    // ManyToOne avec Equipe
+
     @ManyToOne
     @JoinColumn(name = "equipe_id")
     private Equipe equipe;

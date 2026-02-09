@@ -17,14 +17,10 @@ public class Position {
     private Integer classement;
     private Integer nbPoints;
 
-    // ========== ASSOCIATIONS ==========
-
-    // ManyToOne avec Course
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Course course;
 
-    // ManyToOne avec Pilote
     @ManyToOne
     @JoinColumn(name = "pilote_id")
     private Pilote pilote;

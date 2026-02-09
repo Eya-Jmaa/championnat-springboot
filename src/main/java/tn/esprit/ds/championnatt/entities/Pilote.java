@@ -21,12 +21,12 @@ public class Pilote {
 
 
 
-    // ManyToOne avec Equipe
+
     @ManyToOne
     @JoinColumn(name = "equipe_id")
     private Equipe equipe;
 
-    // OneToMany avec Position
+
     @OneToMany(mappedBy = "pilote", cascade = CascadeType.ALL)
     private List<Position> positions;
 }

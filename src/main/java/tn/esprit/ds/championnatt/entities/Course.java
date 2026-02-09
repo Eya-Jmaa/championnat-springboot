@@ -21,12 +21,12 @@ public class Course {
 
 
 
-    // ManyToOne avec Championnat
+
     @ManyToOne
     @JoinColumn(name = "championnat_id")
     private Championnat championnat;
 
-    // OneToMany avec Position
+
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
     private List<Position> positions;
 }
