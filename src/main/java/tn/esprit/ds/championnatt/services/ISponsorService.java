@@ -1,4 +1,4 @@
-package tn.esprit.ds.championnatt.entities.services;
+package tn.esprit.ds.championnatt.services;
 
 import tn.esprit.ds.championnatt.entities.Sponsor;
 

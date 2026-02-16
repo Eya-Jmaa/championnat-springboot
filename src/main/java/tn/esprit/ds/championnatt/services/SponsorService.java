@@ -1,11 +1,9 @@
-package tn.esprit.ds.championnatt.entities.services;
+package tn.esprit.ds.championnatt.services;
 
 import tn.esprit.ds.championnatt.entities.Sponsor;
 import tn.esprit.ds.championnatt.repository.SponsorRepo;
 
-import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 public class SponsorService implements ISponsorService {
