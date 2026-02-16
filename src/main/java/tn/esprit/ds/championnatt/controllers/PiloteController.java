@@ -19,23 +19,4 @@ public class PiloteController {
         return piloteService.addPilote(p);
     }
 
-    @GetMapping("/all")
-    public List<Pilote> getAllPilotes() {
-        return piloteService.retrieveAllPilotes();
-    }
-
-    @GetMapping("/{id}")
-    public Pilote getPilote(@PathVariable Long id) {
-        return piloteService.retrievePilote(id);
-    }
-
-    @PutMapping("/update")
-    public Pilote updatePilote(@RequestBody Pilote p) {
-        return piloteService.updatePilote(p);
-    }
-
-    @DeleteMapping("/delete/{id}")
-    public void deletePilote(@PathVariable Long id) {
-        piloteService.deletePilote(id);
-    }
 }
